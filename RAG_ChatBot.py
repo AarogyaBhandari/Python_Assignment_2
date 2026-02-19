@@ -72,7 +72,7 @@ with open("articles.jsonl", "r", encoding="utf-8") as f:
             f_out.write(str(article_index + 1))
 
 print("Database has been built successfully")
-print("Total chunks:", collection.count())
+
 
 #CHATBOT 
 SYSTEM_PROMPT = """You are a helpful assistant.
@@ -131,4 +131,5 @@ while True:
     print("\nBot Answer:", answer, "\n")
     
     
+
 
