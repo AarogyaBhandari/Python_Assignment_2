@@ -6,7 +6,7 @@ import os
 
 #Configuration
 EMBED_MODEL = "nomic-embed-text"
-CHAT_MODEL = "deepseek-r1:8b" #qwen2.5:3b,deepseek-r1:8b,qwen3:8b,gemma3:4b
+CHAT_MODEL = "deepseek-r1:8b" #qwen2.5:3b,deepseek-r1:8b,qwen3:8b,gemma3:4b,AB
 COLLECTION_NAME = "articles_demo"
 
 #Client
@@ -67,7 +67,7 @@ with open("articles.jsonl", "r", encoding="utf-8") as f:
                 }]
             )
 
-        # mark article as processed
+        # mark article as processed AB
         with open("counter.txt", "w") as f_out:
             f_out.write(str(article_index + 1))
 
@@ -130,6 +130,26 @@ while True:
     answer = ask_chatbot(user_query)
     print("\nBot Answer:", answer, "\n")
     
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+#Aarogya
     
+
 
 
